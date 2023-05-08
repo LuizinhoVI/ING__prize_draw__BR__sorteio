@@ -1,0 +1,52 @@
+.roleta {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* background-color: black; */
+    border: solid black 7px;
+}
+
+body {
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.um {
+    width: 100px;
+    height: 100px;
+    border-top-left-radius: 100%;
+    background-color: blue;
+}
+
+.dois {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-bottom-left-radius: 100%;
+    background-color: rgb(255, 0, 234);
+}
+
+.tres {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    rotate: -90deg;
+    left: 100px;
+    top: -100px;
+    border-bottom-left-radius: 100%;
+    background-color: rgb(21, 218, 3);
+}
+
+.quatro {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    rotate: 180deg;
+    left: 100px;
+    top: -300px;
+    border-bottom-left-radius: 100%;
+    background-color: rgb(235, 7, 7);
+}
