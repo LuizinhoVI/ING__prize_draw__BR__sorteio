@@ -5,22 +5,89 @@
     <title>Roulette Wheel</title>
     <link rel="stylesheet" href="style.css">
 
+    <style>
+        .chart {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: #eee;
+        }
+
+        .slice {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            clip: rect(0, 100px, 200px, 100px);
+            transform-origin: center center;
+            background-color: #007bff;
+        }
+
+        .slice:nth-child(1) {
+            transform: rotate(0deg);
+        }
+
+        .slice:nth-child(2) {
+            transform: rotate(72deg);
+        }
+
+        .slice:nth-child(3) {
+            transform: rotate(144deg);
+        }
+
+        .slice:nth-child(4) {
+            transform: rotate(216deg);
+        }
+
+        .slice:nth-child(5) {
+            transform: rotate(288deg);
+            background-color:black ;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="roleta">
-        <div class="graf1">
+    <div class="chart">
+        <div class="slice" style="transform: rotate(45deg);"></div>
+        <div class="slice" style="transform: rotate(90deg);"></div>
+        <div class="slice" style="transform: rotate(135deg);"></div>
+        <div class="slice" style="transform: rotate(225deg);"></div>
+        <div class="slice" style="transform: rotate(315deg);"></div>
+    </div>
 
+    <!-- 
+    <div>
+
+
+        <div class="modelo">
             <li class="um"></li>
         </div>
-        <div>
-
+        <div class="modelo1 ">
             <li class="dois"></li>
         </div>
-        <li class="tres"></li>
-        <li class="quatro"></li>
+        <div class="modelo2 ">
+            <li class="tres"></li>
+        </div>
+        <div class="modelo3">
+            <li class="quatro"></li>
+        </div>
+        <div class="modelo4">
+            <li class="cinco"></li>
+        </div>
 
-        <li class="cinco"></li>
+        <div class="modelo5">
+            <li class="seis"></li>
+        </div>
+        <div class="modelo6 ">
+            <li class="sete"></li>
+        </div>
+        <div class="modelo7 ">
+            <li class="oito"></li>
+        </div>
+
 
     </div>
     <hr>
@@ -28,7 +95,7 @@
         <button id="spin">Rodar</button>
     </div>
 
-
+ -->
 
 </body>
 

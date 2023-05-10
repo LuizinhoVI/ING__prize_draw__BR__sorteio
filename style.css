@@ -14,39 +14,100 @@ li {
     list-style-type: none;
 }
 
-.um {
+.um, .dois, .tres, .quatro, .cinco, .seis, .sete,.oito {
     width: 100px;
     height: 100px;
-    border-top-left-radius: 100%;
-    background-color: blue;
-}
-
-.dois {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    border-bottom-left-radius: 100%;
-    background-color: rgb(255, 0, 234);
-}
-
-.tres {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    rotate: -90deg;
-    left: 100px;
-    top: -100px;
+    position: absolute;
+    rotate: 90deg;
     border-bottom-left-radius: 100%;
     background-color: rgb(21, 218, 3);
 }
 
+.dois {
+
+    background-color: blue;
+    /* z-index: ; */
+}
+
+.um {
+
+    background-color: rgb(255, 0, 234);
+
+}
+
 .quatro {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    rotate: 180deg;
-    left: 100px;
-    top: -300px;
-    border-bottom-left-radius: 100%;
+
     background-color: rgb(235, 7, 7);
+}
+
+.cinco {
+
+    background-color: rgb(0, 0, 0);
+}
+
+.seis {
+
+    background-color: rgb(66, 116, 173);
+}
+
+.sete {
+
+    background-color: rgb(112, 38, 96);
+}
+.oito {
+
+    background-color: rgb(118, 206, 125);
+}
+
+
+.modelo,.modelo1,.modelo2,.modelo3,.modelo4,.modelo5,.modelo6,.modelo7 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.modelo {
+  
+    rotate: 0deg;
+z-index: 8;
+}
+
+.modelo1 {
+ 
+    rotate: 90deg;
+    z-index: 10;
+  
+}
+
+.modelo2 {
+  
+    rotate: 180deg;
+    z-index: 5;
+}
+
+.modelo3 {
+  
+    rotate: 270deg;
+    z-index: 7;
+}
+
+.modelo4 {
+   
+    rotate: 45deg;
+    z-index: 9;
+}
+.modelo5 {
+   
+    rotate: 135deg;
+    z-index: 11;
+}
+.modelo6 {
+   z-index: 6;
+    rotate: 225deg;
+}
+.modelo7 {
+   
+    rotate: 320deg;
+z-index: 7;
 }
